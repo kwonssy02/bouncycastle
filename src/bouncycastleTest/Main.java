@@ -10,6 +10,10 @@ public class Main {
 		System.out.println(plainText);
 		System.out.println(encryptedStr);
 		System.out.println(decryptedStr);
+		
+		HashMng hashMng = new HashMng();
+		byte[] sha256 = hashMng.generateSHA256(plainText);
+		System.out.println(new String(sha256, "UTF-8"));
 	}
 
 	
